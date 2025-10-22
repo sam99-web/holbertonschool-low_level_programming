@@ -3,6 +3,7 @@
 #include <stdio.h>
 
 /**
+ *main - Affiche l'alphabet en minuscules suivi d'une nouvelle ligne
  *
  * Return: Always 0 (Success)
  */
