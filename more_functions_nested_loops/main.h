@@ -1,9 +1,12 @@
 #ifndef MAIN_H
 #define MAIN_H
 /**
- * more_numbers - more_numbers from 0 to 14 followed by a new line
+ * print_line - draws a straight line in the terminal
+ * @n: number of times the character _ should be printed
+ *
+ * If n is 0 or less, only a new line is printed
  */
-void more_numbers(void);
+void print_line(int n);
 
 /**
  * _putchar - writes the character c to stdout
