@@ -1,14 +1,17 @@
 #ifndef MAIN_H
 #define MAIN_H
+/**
+ * print_numbers - prints numbers from 0 to 9 followed by a new line
+ */
+void print_numbers(void);
 
 /**
- * _mul -multiplies two integers 
- * @a: firt integer
- * @b: second integer
+ * _putchar - writes the character c to stdout
+ * @c: The character to print
  *
- * Return: the result of multiplication
+ * Return: On success 1.
+ * On error, -1 is returned, and errno is set appropriately.
  */
-int mul(int a, int b);
+int _putchar(char c);
 
 #endif /* MAIN_H */
-
