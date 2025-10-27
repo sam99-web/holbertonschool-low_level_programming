@@ -2,12 +2,13 @@
 #define MAIN_H
 
 /**
- * _isdigit - checks for a digit (0 through 9) 
- * @c: the character to check
+ * _mul -multiplies two integers 
+ * @a: firt integer
+ * @b: second integer
  *
- * Return: 1 if c is a digit, 0 otherwise
+ * Return: the result of multiplication
  */
-int _isdigit(int c);
+int mul(int a, int b);
 
 #endif /* MAIN_H */
 
