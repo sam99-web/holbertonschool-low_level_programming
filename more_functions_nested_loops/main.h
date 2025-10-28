@@ -1,7 +1,10 @@
 #ifndef MAIN_H
 #define MAIN_H
-
-void print_square(int size);
-int _putchar(char c);
+/**
+ * main - prints numbers from 1 to 100
+ * Description: ...
+ * Return: Always 0 (Success)
+ */
+int main(void)
 
 #endif                             
