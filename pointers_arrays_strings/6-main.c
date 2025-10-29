@@ -1,15 +1,18 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
- * main - vérifier le code
+ * main - check the code for cap_string function
  *
- * Return: Toujours 0.
+ * Return: Always 0.
  */
 int main(void)
 {
-    char *str;
+	char str[] = "hello world! welcome to holberton school. let's code better.";
 
-    str = "0123456789";
-    puts2(str);
-    return (0);
+	printf("%s", str);
+	cap_string(str);
+	printf("%s", str);
+
+	return (0);
 }
