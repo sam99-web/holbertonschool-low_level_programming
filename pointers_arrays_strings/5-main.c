@@ -2,16 +2,17 @@
 #include <stdio.h>
 
 /**
- * main - check the code
+ * main - check the code for string_toupper function
  *
  * Return: Always 0.
  */
 int main(void)
 {
-    char s[11] = "My School";
+	char str[] = "Holberton School!\nThis is a test String 123.";
 
-    printf("%s\n", s);
-    rev_string(s);
-    printf("%s\n", s);
-    return (0);
+	printf("%s", str);
+	string_toupper(str);
+	printf("%s", str);
+
+	return (0);
 }
