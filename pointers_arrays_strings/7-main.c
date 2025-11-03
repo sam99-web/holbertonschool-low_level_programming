@@ -2,17 +2,23 @@
 #include <stdio.h>
 
 /**
- * main - check the code for leet function
+ * main - check the code for print_chessboard function
  *
  * Return: Always 0.
  */
 int main(void)
 {
-	char str[] = "Hello, Holberton School! Let's code in 1337.";
+    char board[8][8] = {
+        {'r', 'k', 'b', 'q', 'k', 'b', 'k', 'r'},
+        {'p', 'p', 'p', 'p', 'p', 'p', 'p', 'p'},
+        {' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '},
+        {' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '},
+        {' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '},
+        {' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '},
+        {'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P'},
+        {'R', 'K', 'B', 'Q', 'K', 'B', 'K', 'R'}
+    };
 
-	printf("%s\n", str);
-	leet(str);
-	printf("%s\n", str);
-
-	return (0);
+    print_chessboard(board);
+    return (0);
 }
