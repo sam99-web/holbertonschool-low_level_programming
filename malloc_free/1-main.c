@@ -1,12 +1,5 @@
 #include "main.h"
-#include <stdio.h>
-#include <stdlib.h>
 
-/**
- * main - check the code
- *
- * Return: Always 0.
- */
 int main(void)
 {
     char *s;
@@ -14,10 +7,11 @@ int main(void)
     s = _strdup("Duplicated");
     if (s == NULL)
     {
-        printf("failed to allocate memory\n");
+        printf("Memory allocation failed or input is NULL\n");
         return (1);
     }
-    printf("%s\n", s);
+
+    printf("Duplicated string: %s\n", s);
     free(s);
     return (0);
 }
