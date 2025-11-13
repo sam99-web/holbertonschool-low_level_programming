@@ -1,13 +1,11 @@
-/* malloc_checked.c */
-#include <stdlib.h>
+#include "main.h"
 
 /**
- * malloc_checked - alloue de la mémoire avec malloc et vérifie l'échec
- * @b: nombre d'octets à allouer
+ * malloc_checked - Allocates memory using malloc
+ * @b: Number of bytes to allocate
  *
- * Description: Alloue @b octets à l'aide de malloc. Si malloc retourne NULL,
- * la fonction termine immédiatement le processus avec le statut 98.
- * Retourne un pointeur vers la zone mémoire allouée en cas de succès.
+ * Return: Pointer to allocated memory
+ *         If malloc fails, exit with status value 98
  */
 void *malloc_checked(unsigned int b)
 {
@@ -16,6 +14,5 @@ void *malloc_checked(unsigned int b)
 	ptr = malloc(b);
 	if (ptr == NULL)
 		exit(98);
-
 	return (ptr);
 }
